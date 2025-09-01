@@ -11,7 +11,7 @@ betaVals = [3/4, 2/3, 1/2, 1/3, 1/4]
 for beta in betaVals:
     for s in range(0, xMax+1):
         xVals.append(s)
-        yVals.append( s ** beta )
+        yVals.append( math.e * (s ** beta) )
     plt.plot(xVals, yVals)
     for x, y in zip(xVals, yVals):
         plt.text(x, y, str(round(y,1)), ha="center", va="bottom")    
