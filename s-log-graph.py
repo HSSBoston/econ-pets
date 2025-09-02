@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import math
 
 plt.figure(figsize=(6.4*1.5, 4.8*1.5))
+plt.rcParams["font.size"] = 14
 
 xMax = 15
 xVals = []
@@ -24,7 +25,7 @@ for beta in betaVals:
     yVals = []
 
 plt.xlim(0, 17)
-plt.xlabel("s")
-plt.ylabel("ln(e * s^beta)")
+plt.xlabel("s", fontsize=20)
+plt.ylabel("ln(e * s^beta)", fontsize=20)
 plt.grid(True)
 plt.show()
