@@ -65,8 +65,9 @@ for alpha in alphaVals:
                  ha="left",
                  va="bottom")
         vVals = []
+
 plt.xlim(0, 210)
-plt.xlabel("w")
-plt.ylabel("v")
+plt.xlabel("w ($/hr)")
+plt.ylabel("v' (minutes)")
 plt.grid(True)
 plt.show()
