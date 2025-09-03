@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-import numpy as np
 
 plt.figure(figsize=(6.4, 4.8*2.5))
 
@@ -67,7 +66,7 @@ for alpha in alphaVals:
         vVals = []
 
 plt.xlim(0, 210)
-plt.xlabel("w ($/hr)")
-plt.ylabel("v' (minutes)")
+plt.xlabel("w ($/hr)", fontsize=20)
+plt.ylabel("v' (minutes)", fontsize=20)
 plt.grid(True)
 plt.show()
