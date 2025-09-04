@@ -25,7 +25,7 @@ for beta in betaVals:
     yVals = []
 
 plt.xlim(0, 17)
-plt.xlabel("s", fontsize=20)
-plt.ylabel("ln(e * s^beta)", fontsize=20)
+plt.xlabel("S", fontsize=30)
+plt.ylabel("ln(e * s^beta)", fontsize=30)
 plt.grid(True)
 plt.show()
