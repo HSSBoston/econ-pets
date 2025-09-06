@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 plt.figure(figsize=(6.4, 4.8*2.5))
 
 wVals     = [25, 50, 75, 100, 125, 150]
-alphaVals = [5, 10, 15, 20]
-betaVals  = [1/2]
+alphaVals = [2.5, 5, 7.5, 10, 12.5, 15]
+betaVals  = [0.5]
 vVals     = []
 
 for alpha in alphaVals:
@@ -24,8 +24,8 @@ for alpha in alphaVals:
         vVals = []
 
 wVals     = [25, 50, 75, 100, 125, 150]
-alphaVals = [5, 10, 15, 20]
-betaVals  = [2/3]
+alphaVals = [2.5, 5, 7.5, 10, 12.5, 15]
+betaVals  = [0.6]
 vVals     = []
 
 for alpha in alphaVals:
@@ -45,8 +45,8 @@ for alpha in alphaVals:
         vVals = []
 
 wVals     = [25, 50, 75, 100, 125, 150]
-alphaVals = [5, 10, 15, 20]
-betaVals  = [3/4]
+alphaVals = [2.5, 5, 7.5, 10, 12.5, 15]
+betaVals  = [0.7]
 vVals     = []
 
 for alpha in alphaVals:
@@ -68,6 +68,6 @@ for alpha in alphaVals:
 #plt.xlim(0, 155)
 plt.xticks([0, 25, 50, 75, 100, 125, 150])
 plt.xlabel("w ($/hr)", fontsize=20)
-plt.ylabel("v' (minutes)", fontsize=20)
+plt.ylabel("v^*' (minutes)", fontsize=20)
 plt.grid(True)
 plt.show()
