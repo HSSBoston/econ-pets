@@ -22,26 +22,26 @@ U = w \
 
 fig = plt.figure()
 ax1 = fig.add_subplot(221, projection="3d")
-ax1.plot_surface(N, C, U, cmap="jet") # 表面図を描画
+ax1.plot_surface(N, C, U, cmap="jet")
 ax1.set_xlabel("N")
 ax1.set_ylabel("C")
 ax1.set_zlabel("U")
 
 ax2 = fig.add_subplot(222, projection="3d")
-im = ax2.contour3D(N, C, U, cmap="jet") # 表面図を描画
+im = ax2.contour3D(N, C, U, cmap="jet")
 plt.colorbar(im, ax=ax2, cmap="jet")
 ax2.set_xlabel("N")
 ax2.set_ylabel("C")
 ax2.set_zlabel("U")
 
 ax3 = fig.add_subplot(223)
-im = ax3.pcolormesh(N, C, U, cmap="jet") # 表面図を描画
+im = ax3.pcolormesh(N, C, U, cmap="jet")
 plt.colorbar(im, ax=ax3, cmap="jet")
 ax3.set_xlabel("N")
 ax3.set_ylabel("C")
 
 ax4 = fig.add_subplot(224)
-ax4.contour(N, C, U, cmap="jet") # 表面図を描画
+ax4.contour(N, C, U, cmap="jet")
 # ax4.colorbar()
 ax4.set_xlabel("N")
 ax4.set_ylabel("C")
@@ -51,7 +51,7 @@ cOptimal = (gamma/(1 - gamma)) * ((w * tc) / p)
 print(nOptimal, cOptimal)
 
 
-#ax2.plot_wireframe(N, C, U, cmap="viridis") # 表面図を描画
+#ax2.plot_wireframe(N, C, U, cmap="viridis")
 # ax.plot_wireframe(N, C, U)
 #ax.contour3D(N, C, U)
 
