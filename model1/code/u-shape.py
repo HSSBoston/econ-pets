@@ -6,15 +6,15 @@ n = np.linspace(0.1, 10, 100) # generate 100 n values in n=[0,10]
 c = np.linspace(0.1, 10, 100) # generate 100 c values in c=[0,10]
 N, C = np.meshgrid(n, c)    # generate a grid of n and c values
 
-w = 50
-tc = 0.05
+w = 53.43
+t = 0.0285
 p = 1
-alpha = 7.5
+alpha = 3.77
 beta = math.e
-gamma = 0.67
+gamma = 0.307
 
 U = w \
-    - (w * tc * N)  \
+    - (w * t * N)  \
     - (p * C * N)  \
     + (alpha * np.log(beta))  \
     + (alpha * np.log(N))  \
@@ -46,8 +46,8 @@ ax4.contour(N, C, U, cmap="jet")
 ax4.set_xlabel("N")
 ax4.set_ylabel("C")
 
-nOptimal = (alpha * (1 - gamma)) / (w * tc)
-cOptimal = (gamma/(1 - gamma)) * ((w * tc) / p)
+nOptimal = (alpha * (1 - gamma)) / (w * t)
+cOptimal = (gamma/(1 - gamma)) * ((w * t) / p)
 print(nOptimal, cOptimal)
 
 
