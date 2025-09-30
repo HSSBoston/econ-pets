@@ -44,6 +44,7 @@ ax3.set_ylabel("C")
 
 ax4 = fig.add_subplot(224)
 ax4.contour(N, C, U, levels=20, cmap="jet")
+plt.colorbar(im, ax=ax4, cmap="jet")
 ax4.set_xticks(np.arange(0,10.5,0.5), labels=np.arange(0,10.5,0.5), fontsize=9,rotation=65)
 ax4.set_yticks(np.arange(0,11,1))
 # ax4.colorbar()
