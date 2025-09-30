@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(6.4, 4.8*2.5))
+#plt.figure(figsize=(6.4, 4.8*2.5))
 
 petExpenditureRatios = [0.05, 0.06, 0.07, 0.08, 0.09, 0.10]
 gammaVals  = [0.2, 0.3, 0.4, 0.5, 0.6]
@@ -24,7 +24,7 @@ for gammaVal in gammaVals:
 
 #plt.xlim(0, 155)
 #plt.xticks([0, 25, 50, 75, 100, 125, 150])
-#plt.xlabel("w ($/hr)", fontsize=20)
-#plt.ylabel("v^*' (minutes)", fontsize=20)
+plt.xlabel("α/w", fontsize=20)
+plt.ylabel("Time Spent for a Pet (minutes)", fontsize=17)
 plt.grid(True)
 plt.show()
