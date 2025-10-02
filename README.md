@@ -28,3 +28,6 @@ This work was presented at a summer science fair of the Japanese Language School
 
 -->
 
+<p align="center">
+  <img src="model1/utility-landscape.png" width="500" />
+</p>
