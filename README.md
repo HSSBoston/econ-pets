@@ -16,6 +16,10 @@ The proposed model serves as a ground for computational experiments with empiric
 
 This work is intended to aid the current and prospective pet owners to explore quantitative economic reasoning about pet ownership in the hope of reducing the chances of impulse pet acquisition, helping schedule pet care routines better, and reversing the on-going trend of pet relinquishment. 
 
+<p align="center">
+  <img src="model1/utility-landscape.png" width="500" />
+</p>
+
 This work was presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./model1/poster-jls.jpg) in Japanese). It was also presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery).
 
 <!--
@@ -32,7 +36,3 @@ This work was presented at a summer science fair of the Japanese Language School
 
 I wanted a pet, but my parents always disagreed, saying no one in our family has enough time to care for a pet. I went through stats, reports, and research papers about the time required for pet care, the benefits to having pets, pet relinquishment case studies at shelters, etc. Then I came across the economic theories for household fertility, which model the benefit and cost of children. I found them intriguing and thought they could be applied to model the benefit and cost of pets. This led me to studying those theories and expanding  my knowledge about microeconomics and calculus. I also tried to use my quantitative economic reasoning to convince my parents (which worked! I am looking for a cat now).
 
-
-<p align="center">
-  <img src="model1/utility-landscape.png" width="500" />
-</p>
