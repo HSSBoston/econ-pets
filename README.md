@@ -16,11 +16,11 @@ The proposed model serves as a ground for computational experiments with empiric
 
 This work is intended to aid the current and prospective pet owners to explore quantitative economic reasoning about pet ownership in the hope of reducing the chances of impulse pet acquisition, helping schedule pet care routines better, and reversing the on-going trend of pet relinquishment. 
 
-This work was presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./model1/poster-jls.jpg) in Japanese) and at [AnimalHack 2025](https://animalhack2025.devpost.com/).
+This work was presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./model1/poster-jls.jpg) in Japanese) and at [AnimalHack 2025](https://animalhack2025.devpost.com/).  It won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery) at AnimalHack 2025. 
+
 <!--
  ([presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)). 
 -->
- It won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery) at AnimalHack 2025. 
 
 <!--
 
