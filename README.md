@@ -16,12 +16,13 @@ The proposed model serves as a ground for computational experiments with empiric
 
 This work is intended to aid the current and prospective pet owners to explore quantitative economic reasoning about pet ownership in the hope of reducing the chances of impulse pet acquisition, helping schedule pet care routines better, and reversing the on-going trend of pet relinquishment. 
 
-## Models
+## Economic Models
 
 This project has been developing multiple models.
 
 - Model 1 (August to December 2025)
-  - a
+  - The initial model 
+
 - Model 2 (January 2026 -)
   - a
 
