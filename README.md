@@ -25,14 +25,14 @@ This project has been developing and evaluating multiple models.
 
 - Model 2 (January 2026 -)
   - Revised baseline model. The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, baseline preventive care, adoption fees (amortized), spay/neuter costs (amortized), and microchipping (amortized).
-  - 
-  - two pet-related expenditures: 
 
 - Model 3 (February 2026 -)
-  - aa
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 1, pet quantity and quality are combined into a single term.
 
 - Model 3 (February 2026 -)
-  - aa
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to adopt a Cobb-Douglas form that combines pet quantity and quality into a single companionship term.
+
+- Model 4 (February 2026 -)
 
 
 <!--
