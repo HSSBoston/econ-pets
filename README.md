@@ -3,7 +3,7 @@
 -->
 
 <p align="center">
-  <img src="logo.jpg" width="650" />
+  <img src=".images/logo.jpg" width="650" />
 </p>
 
 ## Project Summary
