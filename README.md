@@ -18,20 +18,29 @@ This work is intended to aid the current and prospective pet owners to explore q
 
 ## Economic Models
 
-This project has been developing multiple models.
+This project has been developing and evaluating multiple models.
 
 - Model 1 (August to December 2025)
-  - The initial model 
+  - The initial baseline model. Deprecated now.
 
 - Model 2 (January 2026 -)
-  - a
+  - Revised baseline model. The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, baseline preventive care, adoption fees (amortized), spay/neuter costs (amortized), and microchipping (amortized).
+  - 
+  - two pet-related expenditures: 
+
+- Model 3 (February 2026 -)
+  - aa
+
+- Model 3 (February 2026 -)
+  - aa
+
 
 <!--
 <p align="center">
   <img src="model1/utility-landscape.png" width="500" />
 </p>
 
-This work was presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./model1/poster-jls.jpg) in Japanese). It was also presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery).
+This work was presented 
 
  ([presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)). 
 -->
@@ -39,6 +48,9 @@ This work was presented at a summer science fair of the Japanese Language School
 ## Publications
   - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference*, poster presentation paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf)
   - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf)
+
+
+  - Presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./model1/poster-jls.jpg) in Japanese). Also presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery).
 
 ## Informal Context to this Project
 
