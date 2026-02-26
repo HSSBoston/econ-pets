@@ -18,9 +18,12 @@ This work is intended to aid the current and prospective pet owners to explore q
 
 ## Models
 
-- Model 1
-  - 
-- Model 2
+This project has been developing multiple models.
+
+- Model 1 (August to December 2025)
+  - a
+- Model 2 (January 2026 -)
+  - a
 
 <!--
 <p align="center">
