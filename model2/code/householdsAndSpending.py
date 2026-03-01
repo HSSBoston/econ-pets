@@ -19,5 +19,6 @@ ax1.set_xlabel("Years", fontsize=16)
 ax1.set_ylabel("# of Households with Pets (millions)", color="red", fontsize=15)
 ax1.set_yticks(np.arange(50,101,10))
 ax2.set_ylabel("Pet Expenditure (billion USD)", color="blue", fontsize=16)
+ax2.set_yticks(np.arange(90,151,10))
 
 plt.show()
