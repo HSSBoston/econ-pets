@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 k = 0.1
 wVals     = [25, 50, 75]
-alphaVals = [2.5, 3.5, 5]
+alphaVals = [2.5, 3.5, 5.0]
 gammaVals  = [0.15, 0.3, 0.45]
 tVals     = []
 
