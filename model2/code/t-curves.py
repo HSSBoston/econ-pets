@@ -28,6 +28,6 @@ for alpha in alphaVals:
 plt.xticks([5, 25, 50, 75])
 plt.xlabel("Hourly wage rate (w)", fontsize=20)
 # plt.yticks([10, 25, 50, 75, 100, 125, 150, 175, 200])
-plt.ylabel("Caregiving time (min)", fontsize=20)
+plt.ylabel("Caregiving time per pet (min)", fontsize=20)
 plt.grid(True)
 plt.show()
