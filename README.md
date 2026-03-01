@@ -23,10 +23,12 @@ This project has been developing and evaluating multiple models.
 - Model 1 (August to December 2025)
   - The initial baseline model. Deprecated now.
   - Presented at ASSET 2025, AnimalHack 2025, and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
+  - Model description
 
 - Model 2 (January 2026 -)
   - Revised baseline model. The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
   - Presented at ISEC 2026. 
+  - Model description
 
 - Model 3 (February 2026 -)
   - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
