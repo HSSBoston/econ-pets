@@ -17,7 +17,7 @@ ax2.plot(everyYear, petCareSpending,
 
 ax1.set_xlabel("Years", fontsize=20)
 ax1.set_ylabel("# of Households w/ Pets (M)", color="red", fontsize=20)
-ax1.set_yticks(np.arange(50,101,10))
+ax1.set_yticks(np.arange(70,101,5))
 ax2.set_ylabel("Pet Expenditure ($bn)", color="blue", fontsize=20)
 ax2.set_yticks(np.arange(50,151,10))
 
