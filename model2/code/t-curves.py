@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-# plt.figure(figsize=(6.4, 4.8*2.5))
+plt.figure(figsize=(6, 8))
 
 k = 0.1
 wVals     = [30, 40, 50, 60, 70]
