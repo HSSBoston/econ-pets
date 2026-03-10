@@ -6,15 +6,23 @@
   <img src="./images/logo.jpg" width="650" />
 </p>
 
-## Project Summary
+## Short Project Summary
 
-This project studies a formal model that applies economic principles, such as utility optimization, budget and time constraints, opportunity cost, and diminishing marginal utility, to describe and explain how households make choices about having pets. Based on the microeconomic theories of the household, particularly for fertility, the proposed model considers key economic parameters in pet ownership choices such as the household preference to have pets, the number and welfare of pets, the price of pet care goods and services, the time spent for caregiving, the household income, and the household utility (household wellbeing). 
+This poster presents a formal economic model that describes how households make choices about pet ownership. Based on microeconomic theories of fertility, the proposed model analyzes pet ownership as a rational, utility-maximizing choice. It considers key parameters in pet ownership choices and defines an economic problem to optimize these parameters with respect to household utility (welfare). The model yields marginal cost-benefit trade-offs to find the utility equilibrium. Comparative statics characterize the relationships among relevant parameters and derive hypotheses about pet ownership patterns over time. Computational experiments illustrate the household utility landscape and clarify how key parameters shape pet ownership choices. This work aids current/prospective pet owners to explore quantitative economic reasoning about pet ownership, with the goal of reducing impulsive acquisition, supporting better-organized care routines, and addressing the on-going trend of pet relinquishment.
 
-This work defines an optimization problem to maximize the household utility by having pets and conducts a marginal cost-benefit analysis to find the utility equilibrium. This work also carries out comparative statics analysis to examine the relationships among relevant parameters and derive hypotheses about pet ownership phenomena in the past and future.   
+<!--
+
+This project studies a formal model that describes how households make choices about pet ownership. Based on microeconomic theories of fertility, the proposed model applies economic principles, such as utility optimization, budget and time constraints, opportunity cost, and diminishing marginal utility, to analyze pet ownership as a rational, utility-maximizing choice. The model considers key parameters in pet ownership such as preferences for pets, the number and welfare of pets, the price of pet-care goods, caregiving time and intensity, and household income.
+
+, and defines an economic problem to optimize these parameters with respect to household utility (welfare).
+
+ an optimization problem to maximize the household utility by having pets and conducts a marginal cost-benefit analysis to find the utility equilibrium. This work also carries out comparative statics analysis to examine the relationships among relevant parameters and derive hypotheses about pet ownership phenomena in the past and future.  
 
 The proposed model serves as a ground for computational experiments with empirical data. Experimental results illustrate a utility landscape for average pet owners in the U.S. and reveal the combinations of parameter values at and around the utility equilibrium. The results also show how those parameters impact the household's choices about pet ownership and caregiving. 
 
 This work is intended to aid the current and prospective pet owners to explore quantitative economic reasoning about pet ownership in the hope of reducing the chances of impulse pet acquisition, helping schedule pet care routines better, and reversing the on-going trend of pet relinquishment. 
+
+-->
 
 ## Models
 
