@@ -28,7 +28,7 @@ This project has been developing and analyzing multiple economic models.
 
 - Model 2 (January 2026 -)
   - Revised baseline model. The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
-  - Model description
+  - [Model description](model2/model2.pdf)
   - Presented at ISEC 2026. 
 
 - Model 3 (February 2026 -)
