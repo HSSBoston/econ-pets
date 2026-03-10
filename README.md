@@ -41,6 +41,7 @@ This project has been developing and analyzing multiple economic models.
 
 - Model 5 (February 2026 -)
   - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
+  - Model description
 
 <!--
 <p align="center">
