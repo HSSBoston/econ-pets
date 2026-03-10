@@ -37,6 +37,7 @@ This project has been developing and analyzing multiple economic models.
 
 - Model 4 (February 2026 -)
   - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to adopt a Cobb-Douglas form that combines pet quantity and quality into a single companionship term.
+  - Model description
 
 - Model 5 (February 2026 -)
   - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
