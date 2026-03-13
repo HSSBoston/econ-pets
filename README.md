@@ -31,7 +31,7 @@ This project has been developing and analyzing multiple economic models.
 - Model 1 (August to December 2025)
   - The initial baseline model. Deprecated now.
   - Model description
-  - Presented at ASSET 2025, AnimalHack 2025, and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
+  - Presented at ASSET 2025 ([abstract](./docs/asset25.pdf)), AnimalHack 2025, and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
 
 
 - Model 2 (January 2026 -)
