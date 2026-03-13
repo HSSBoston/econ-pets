@@ -65,8 +65,6 @@ This work was presented
   - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference (ISEC)*, poster presentation paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf)
   - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference (ASSET)*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf), [presentation slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)
 
-  
-
 ## Presentations
   - Presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./docs/poster-jls.jpg) in Japanese) and won an award of excellence.  
   - Presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery). [presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)
