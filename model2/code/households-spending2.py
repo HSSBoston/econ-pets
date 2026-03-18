@@ -2,8 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 df = pd.read_csv("data/hh-spending.csv")
-
-# Preview columns (optional, helps debugging)
 print(df.head())
 
 # Make sure year is numeric and sort by year
