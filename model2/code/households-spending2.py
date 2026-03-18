@@ -6,22 +6,52 @@ df = pd.read_csv("data/hh-spending.csv")
 # Preview columns (optional, helps debugging)
 print(df.head())
 
+# Make sure year is numeric and sort by year
+df["year"] = pd.to_numeric(df["year"], errors="coerce")
+df = df.sort_values("year").reset_index(drop=True)
+
+# Make hh and spending numeric
+df["hh"] = pd.to_numeric(df["hh"], errors="coerce")
+df["spending"] = pd.to_numeric(df["spending"], errors="coerce")
+
+# Keep only rows where each series exists
+hh_df = df.dropna(subset=["hh"])
+spending_df = df.dropna(subset=["spending"])
+
 # Plot
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(9, 5))
 
-plt.plot(df["year"], df["hh"], marker='o', label="Households (hh)")
-plt.plot(df["year"], df["spending"], marker='o', label="Spending")
+plt.plot(hh_df["year"], hh_df["hh"],
+         marker="o", linewidth=2, label="hh")
 
-# Labels and title
+plt.plot(spending_df["year"], spending_df["spending"],
+         marker="s", linewidth=2, label="spending")
+
 plt.xlabel("Year")
 plt.ylabel("Value")
-plt.title("Households and Spending Over Time")
-
-# Legend
+plt.title("hh and spending over years")
 plt.legend()
-
-# Grid (optional but nice)
 plt.grid(True)
-
-# Show plot
+plt.tight_layout()
 plt.show()
+
+# 
+# # Plot
+# plt.figure(figsize=(8, 5))
+# 
+# plt.plot(df["year"], df["hh"], marker='o', label="Households (hh)")
+# plt.plot(df["year"], df["spending"], marker='o', label="Spending")
+# 
+# # Labels and title
+# plt.xlabel("Year")
+# plt.ylabel("Value")
+# plt.title("Households and Spending Over Time")
+# 
+# # Legend
+# plt.legend()
+# 
+# # Grid (optional but nice)
+# plt.grid(True)
+# 
+# # Show plot
+# plt.show()
