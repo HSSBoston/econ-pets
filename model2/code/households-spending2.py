@@ -1,8 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load your CSV file
-df = pd.read_csv("/mnt/data/hh-spending.csv")
+df = pd.read_csv("data/hh-spending.csv")
 
 # Preview columns (optional, helps debugging)
 print(df.head())
