@@ -1,3 +1,6 @@
+# The first row must have the header. Its column labels must be
+# "year", "hh", and "spending" for the first, second, and third columns.
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
