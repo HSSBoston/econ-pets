@@ -3,6 +3,7 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 df = pd.read_csv("data/hh-spending.csv")
 print(df.head())
@@ -29,9 +30,10 @@ ax2 = ax1.twinx()
 # plt.plot(spending_df["year"], spending_df["spending"],
 #          marker="s", linewidth=2, label="spending")
 
-ax1.plot(numOfHouseholdsWithPetsYears, numOfHouseholdsWithPets,
+ax1.plot(hhDf["year"], hhDf["hh"],
          color="red", marker="o", linewidth=3, markersize=8)
-ax2.plot(everyYear, petCareSpending,
+#label="hh"
+ax2.plot(spendingDf["year"], spendingDf["spending"],
          color="blue", marker="o", linewidth=3, markersize=8)
 
 ax1.set_xlabel("Years", fontsize=20)
