@@ -1,4 +1,4 @@
-# The first row must have the header. Its column labels must be
+# The first CSV row must have the header. Its column labels must be
 # "year", "hh", and "spending" for the first, second, and third columns.
 
 import pandas as pd
@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("data/hh-spending.csv")
 print(df.head())
 
-# Make sure year is numeric and sort by year
+# Make "year" numeric
 df["year"] = pd.to_numeric(df["year"], errors="coerce")
 df = df.sort_values("year").reset_index(drop=True)
 
