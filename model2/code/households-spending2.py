@@ -9,9 +9,9 @@ print(df.head())
 
 # Make "year" numeric
 df["year"] = pd.to_numeric(df["year"], errors="coerce")
-df = df.sort_values("year").reset_index(drop=True)
+# df = df.sort_values("year").reset_index(drop=True)
 
-# Make hh and spending numeric
+# Make "hh" and "spending" numeric
 df["hh"] = pd.to_numeric(df["hh"], errors="coerce")
 df["spending"] = pd.to_numeric(df["spending"], errors="coerce")
 
