@@ -7,12 +7,10 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("data/hh-spending.csv")
 print(df.head())
 
-# Make "year" numeric
-df["year"] = pd.to_numeric(df["year"], errors="coerce")
+# Make "year", "hh" and "spending" numeric
+df["year"]     = pd.to_numeric(df["year"], errors="coerce")
 # df = df.sort_values("year").reset_index(drop=True)
-
-# Make "hh" and "spending" numeric
-df["hh"] = pd.to_numeric(df["hh"], errors="coerce")
+df["hh"]       = pd.to_numeric(df["hh"], errors="coerce")
 df["spending"] = pd.to_numeric(df["spending"], errors="coerce")
 
 # Keep only rows where each series exists
