@@ -13,11 +13,11 @@ df["year"]     = pd.to_numeric(df["year"], errors="coerce")
 df["hh"]       = pd.to_numeric(df["hh"], errors="coerce")
 df["spending"] = pd.to_numeric(df["spending"], errors="coerce")
 
-# Keep only rows where each series exists
-hh_df = df.dropna(subset=["hh"])
-spending_df = df.dropna(subset=["spending"])
+# Remove rows that have empty cells and make yy-hh data frame
+hhDf       = df.dropna(subset=["hh"])
+# Remove rows that have empty cells and make yy-spending data frame
+spendingDf = df.dropna(subset=["spending"])
 
-# Plot
 plt.figure(figsize=(9, 5))
 
 plt.plot(hh_df["year"], hh_df["hh"],
