@@ -38,9 +38,9 @@ ax2.plot(spendingDf["year"], spendingDf["spending"],
 
 ax1.set_xlabel("Years", fontsize=20)
 ax1.set_ylabel("# of Households w/ Pets (M)", color="red", fontsize=20)
-ax1.set_yticks(np.arange(70,101,5))
+ax1.set_yticks(np.arange(50,101,5))
 ax2.set_ylabel("Pet Expenditure ($bn)", color="blue", fontsize=20)
-ax2.set_yticks(np.arange(50,151,10))
+ax2.set_yticks(np.arange(10,151,10))
 
 ax1.tick_params(axis='both', labelsize=16)
 ax2.tick_params(axis='both', labelsize=16)
@@ -48,14 +48,13 @@ ax2.tick_params(axis='both', labelsize=16)
 # plt.tick_params(labelsize=16)
 # plt.rcParams["font.size"] = 16
 
+# plt.grid(True)
+plt.tight_layout()
 plt.show()
-
 
 
 # plt.xlabel("Year")
 # plt.ylabel("Value")
 # plt.title("hh and spending over years")
 # plt.legend()
-# plt.grid(True)
-# plt.tight_layout()
-# plt.show()
+
