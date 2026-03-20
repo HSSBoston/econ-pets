@@ -40,8 +40,7 @@ This project has been developing and analyzing multiple economic models.
   - Published and presented at ISEC 2026 ([short paper](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf))
 
 - Model 3 (March 2026 - )
-  - Revised from Model 2.
-  - 
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership (n) is zero  or pet welfare is very low. 
   - Model description
 
 - Model 4 (March 2026 -)
