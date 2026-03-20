@@ -33,22 +33,27 @@ This project has been developing and analyzing multiple economic models.
   - Model description
   - Presented at ASSET 2025 ([abstract](./docs/asset25.pdf), [slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)), AnimalHack 2025 ([slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)), and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
 
-
-- Model 2 (January 2026 -)
-  - Revised baseline model. The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
+- Model 2 (January to March 2026)
+  - Revised baseline model. Deprecated now.
+  - The utility function is inherited from Model 1. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
   - [Model description](model2/model2.pdf)
   - Published and presented at ISEC 2026 ([short paper](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf))
 
-- Model 3 (February 2026 -)
-  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
+- Model 3 (March 2026 - )
+  - Revised from Model 2.
+  - 
   - Model description
 
-- Model 4 (February 2026 -)
-  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to adopt a Cobb-Douglas form that combines pet quantity and quality into a single companionship term.
+- Model 4 (March 2026 -)
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
   - Model description
 
-- Model 5 (February 2026 -)
-  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
+- Model 5 (March 2026 -)
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to adopt a Cobb-Douglas form that combines pet quantity and quality into a single companionship term.
+  - Model description
+
+- Model 6 (March 2026 -)
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
   - Model description
 
 <!--
