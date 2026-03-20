@@ -47,15 +47,15 @@ This project has been developing and analyzing multiple economic models.
   - Revised baseline model. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership is zero (n = 0) or pet welfare is very low (q ≈ 0). 
   -->
 
-- Model 4 (March 2026 -)
+- Model 4 (February 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
   - Model description
 
-- Model 5 (March 2026 -)
+- Model 5 (February 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to adopt a Cobb-Douglas form that combines pet quantity and quality into a single companionship term.
   - Model description
 
-- Model 6 (March 2026 -)
+- Model 6 (February 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
   - Model description
 
