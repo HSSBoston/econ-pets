@@ -39,9 +39,13 @@ This project has been developing and analyzing multiple economic models.
   - [Model description](model2/model2.pdf)
   - Published and presented at ISEC 2026 ([short paper](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf))
 
-- Model 3 (March 2026 - )
-  - Revised baseline model. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership is zero (n = 0) or pet welfare is very low (q ≈ 0). 
+- Model 3 (February 2026 - )
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified so that caregiving time and caregiving intensity serve as distinct inputs to produce pet welfare. This model clearly distinguishes these two inputs. Caregiving time represents the total time devoted to pet-related activities, including routine care (e.g., feeding, cleaning, and grooming), physical activities (e.g., walking, playing, and exercise), and emotional and social interactions (e.g., petting, bonding, and sitting together). In contrast, caregiving intensity captures the quality and resource intensity of care per unit time, including food quality (e.g., premium/healthy v.s. basic food and high-quality v.s. minimal treats), training intensity (e.g., structured v.s. casual training and consistency/effort level), attention intensity (e.g., focused interaction v.s. distracted presence), health/grooming quality (e.g., high-quality v.s. basic grooming and preventive care such as supplements and weight management), and environmental quality (e.g., comfortable v.s. basic living space and safe/enriched v.s. basic space).
   - Model description
+  
+  <!--
+  - Revised baseline model. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership is zero (n = 0) or pet welfare is very low (q ≈ 0). 
+  -->
 
 - Model 4 (March 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
