@@ -52,11 +52,15 @@ This project has been developing and analyzing multiple economic models.
   -->
 
 - Model 5 (March 2026 -)
-  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
   - Model description
 
 - Model 6 (March 2026 -)
-  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as an additional input in production of pet welfare.
+  - Revised from Model 5. The budget and time constraints are inherited from Model 2. 
+  - Model description
+
+- Model 7 (March 2026 -)
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as a decision variable (choice variable) rather than a fixed parameter (exogenous parameter). 
   - Model description
 
 <!--
