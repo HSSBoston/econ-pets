@@ -52,7 +52,7 @@ This project has been developing and analyzing multiple economic models.
 
 - Model 5 (March 2026 -)
   - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
-  - Model description
+  - [Model description](model2/model5.pdf)
 
 - Model 6 (March 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2. 
