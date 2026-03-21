@@ -44,13 +44,7 @@ This project has been developing and analyzing multiple economic models.
   - [Model description](model2/model3.pdf)
 
 - Model 4 (February 2026 -)
-  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to control the trade-off between pet quantity and pet quality (welfare) by varying the relative importance between them. 
-
-  fewer number of highly-cared pets and greater number of pets with less-intensive care
-
-  so that pet quantity and quality (welfare) have relative importance 
-  
-  can have 
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to control the trade-off between pet quantity and pet quality (welfare) by varying their relative importance. This allows the model to represent different types of households such as those that prefer fewer, highly-cared pets and others that prefer a greater number of pets with less-intensive care. 
   - Model description
 
   <!--
