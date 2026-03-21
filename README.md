@@ -55,7 +55,7 @@ This project has been developing and analyzing multiple economic models.
   - Model description
 
 - Model 6 (March 2026 -)
-  - Revised from Model 5. The budget and time constraints are inherited from Model 2. 
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2. 
   - Model description
 
 - Model 7 (March 2026 -)
