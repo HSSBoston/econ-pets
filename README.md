@@ -48,7 +48,7 @@ This project has been developing and analyzing multiple economic models.
   -->
 
 - Model 4 (February 2026 -)
-  - Revised from Model 2. 
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified so that pet quantity and quality (welfare) can have 
   - Model description
 
 - Model 5 (February 2026 -)
