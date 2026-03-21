@@ -59,7 +59,7 @@ This project has been developing and analyzing multiple economic models.
   - [Model description](model2/model6.pdf)
 
 - Model 7 (March 2026 -)
-  - Revised from Model 3. The budget and time constraints are inherited from Model 2. The utility function is modified to consider caregiving time as a decision variable (choice variable) rather than a fixed parameter (exogenous parameter). 
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2. The utility function is modified to incorporate 2-step pet-ownership. 
   - Model description
 
 <!--
