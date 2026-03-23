@@ -54,7 +54,7 @@ ax4.set_xlabel("N")
 ax4.set_ylabel("C")
 
 nOptimal = (alpha * (1 - gamma)) / (w * t + k)
-cOptimal = (gamma/(1 - gamma) * p) * (w * t + k)
+cOptimal = (gamma * (w * t + k)) / (p * (1 - gamma))
 
 uOptimal = w \
             - (w * t * nOptimal)  \
