@@ -55,7 +55,7 @@ This project has been developing and analyzing multiple economic models.
   - [Model description](model2/model5.pdf)
 
 - Model 6 (March 2026 -)
-  - Revised from Model 5. The budget and time constraints are inherited from Model 2. The utility function is modified so that caregiving time and caregiving intensity serve as distinct inputs to produce pet welfare. This model clearly distinguishes these two inputs. The utility function adopts a Cobb-Douglas form to combine caregiving time and intensity in the production of pet welfare.
+  - Revised from Model 5. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified so that caregiving time and caregiving intensity serve as distinct inputs to produce pet welfare. This model clearly distinguishes these two inputs. The utility function adopts a Cobb-Douglas form to combine caregiving time and intensity in the production of pet welfare.
   - [Model description](model2/model6.pdf)
 
 - Model 7 (March 2026 -)
