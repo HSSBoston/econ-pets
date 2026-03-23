@@ -58,3 +58,8 @@ plt.show()
 # plt.title("hh and spending over years")
 # plt.legend()
 
+V/2r(u7TRj33a{VhHw#349@4}$h87=?%
+
+
+BRIEF-vector-suspend-0910
+
