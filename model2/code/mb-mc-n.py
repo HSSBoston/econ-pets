@@ -12,8 +12,9 @@ p = 1.0
 k = 0.1
 
 # Alternative scenarios
-wHigh = 70.0
+wHigh = w * 1.5 # 86.655
 alphaHigh = 5.0
+tHigh = t * 1.5 # 0.489
 
 # ============================================================
 # Closed-form solutions
@@ -47,6 +48,7 @@ mc0 = mcN(w, t, p, c0, k)
 nW = nStar(alpha, gamma, wHigh, t, k)
 cW = cStar(gamma, wHigh, t, p, k)
 mcW = mcN(wHigh, t, p, cW, k)
+mcT = mcN(w, tHigh, p, cW, k)
 
 nA = nStar(alphaHigh, gamma, w, t, k)
 cA = cStar(gamma, w, t, p, k)
@@ -58,14 +60,14 @@ mcA = mcN(w, t, p, cA, k)
 nGrid = np.linspace(1, 3, 500)
 
 plt.figure(figsize=(4, 4))
-plt.plot(nGrid, mbN(nGrid, alpha), label='MB(n): baseline',
+plt.plot(nGrid, mbN(nGrid, alpha), label='Marginal benefit',
          linewidth=2.5, color="black")
-plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB(n): higher α (5)',
+plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB: higher α',
          linewidth=2.5, color="blue")
 
-plt.axhline(mc0, label='MC(n): baseline', linewidth=2.5,
+plt.axhline(mc0, label='Marginal cost', linewidth=2.5,
              linestyle='--', color="black")
-plt.axhline(mcW, label='MC(n): higher w (70)', linewidth=2.5,
+plt.axhline(mcT, label='MC: higher t', linewidth=2.5,
             linestyle='--', color="red")
 
 # Equilibrium points
@@ -73,23 +75,33 @@ plt.scatter([n0], [mc0], s=80, zorder=5, color="black")
 plt.scatter([nW], [mcW], s=80, zorder=5, color="red")
 plt.scatter([nA], [mcA], s=80, zorder=5, color="blue")
 
-plt.annotate(f'n*={n0:.2f}', (n0, mc0), xytext=(-30, -20), textcoords='offset points',
-             fontsize="11", fontweight='bold', color="black", )
-plt.annotate(f'higher w\nn*={nW:.2f}', (nW, mcW), xytext=(-15, 11), textcoords='offset points',
+plt.annotate(f'n*={n0:.2f}', (n0, mc0), xytext=(-33, -23), textcoords='offset points',
+             fontsize="12", fontweight='bold', color="black", )
+plt.annotate(f'Higher t\n    n*={nW:.2f}', (nW, mcW), xytext=(16, -27), textcoords='offset points',
              fontsize="11", color="red", zorder=5)
-plt.annotate(f'higher α\nn*={nA:.2f}', (nA, mcA), xytext=(3, 3), textcoords='offset points',
-             fontsize="11", color="blue", zorder=5)
+plt.annotate(f'Higher α\nn*={nA:.2f}', (nA, mcA), xytext=(-3, 15), textcoords='offset points',
+             fontsize="12", color="blue", zorder=5)
 
-plt.xlabel('Number of pets (n)', fontsize=20)
-plt.ylabel('Marginal value', fontsize=20)
+plt.xlabel('Number of pets ($n$)', fontsize=15)
+plt.ylabel('Marginal value', fontsize=15)
 # plt.title('Model 2: Marginal Benefit and Marginal Cost for Pet Quantity', fontsize=14)
 plt.xlim(1.0, 2.5)
 plt.xticks([1.0, 1.5, 2.0, 2.5])
+plt.xticks(fontsize=12)
 # plt.ylim(0, max(mcW, mcA, mc0, mbN(0.1, alphaHigh)) * 1.05)
 plt.ylim(1, 5)
+plt.yticks(fontsize=12)
 plt.grid(True, alpha=0.3)
 # plt.legend(handlelength=1.5)
-plt.legend()
+plt.legend(
+    loc='upper right', bbox_to_anchor=(0.99, 0.99),
+    fontsize=15,
+    handlelength=1.2,
+    handletextpad=0.4,
+    labelspacing=0.2,
+    borderpad=0,
+    frameon=False
+)
 plt.tight_layout(pad=0.1)
 plt.show()
 
