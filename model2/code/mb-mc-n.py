@@ -57,39 +57,43 @@ mcA = mcN(w, t, p, cA, k)
 # ============================================================
 nGrid = np.linspace(1, 3, 500)
 
-plt.figure(figsize=(5, 5))
+plt.figure(figsize=(4, 4))
 plt.plot(nGrid, mbN(nGrid, alpha), label='MB(n): baseline',
-         linewidth=2, color="black")
-plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB(n): higher α',
-         linewidth=2, color="blue")
+         linewidth=2.5, color="black")
+plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB(n): higher α (5)',
+         linewidth=2.5, color="blue")
 
-plt.axhline(mc0, label='MC(n): baseline', linewidth=2,
+plt.axhline(mc0, label='MC(n): baseline', linewidth=2.5,
              linestyle='--', color="black")
-plt.axhline(mcW, label='MC(n): higher w', linewidth=2,
+plt.axhline(mcW, label='MC(n): higher w (70)', linewidth=2.5,
             linestyle='--', color="red")
 
 # Equilibrium points
-plt.scatter([n0], [mc0], s=70, zorder=5, color="black")
-plt.scatter([nW], [mcW], s=70, zorder=5, color="red")
-plt.scatter([nA], [mcA], s=70, zorder=5, color="blue")
+plt.scatter([n0], [mc0], s=80, zorder=5, color="black")
+plt.scatter([nW], [mcW], s=80, zorder=5, color="red")
+plt.scatter([nA], [mcA], s=80, zorder=5, color="blue")
 
 plt.annotate(f'n*={n0:.2f}', (n0, mc0), xytext=(-30, -20), textcoords='offset points',
-             fontweight='bold', color="black")
-plt.annotate(f'higher w n*={nW:.2f}', (nW, mcW), xytext=(5, 10), textcoords='offset points',
-             fontweight='bold', color="red")
-plt.annotate(f'higher α n*={nA:.2f}', (nA, mcA), xytext=(8, 8), textcoords='offset points',
-             fontweight='bold', color="blue")
+             fontsize="11", fontweight='bold', color="black", )
+plt.annotate(f'higher w\nn*={nW:.2f}', (nW, mcW), xytext=(-15, 11), textcoords='offset points',
+             fontsize="11", color="red", zorder=5)
+plt.annotate(f'higher α\nn*={nA:.2f}', (nA, mcA), xytext=(3, 3), textcoords='offset points',
+             fontsize="11", color="blue", zorder=5)
 
-plt.xlabel('Number of pets (n)', fontsize=12)
-plt.ylabel('Marginal value', fontsize=12)
+plt.xlabel('Number of pets (n)', fontsize=20)
+plt.ylabel('Marginal value', fontsize=20)
 # plt.title('Model 2: Marginal Benefit and Marginal Cost for Pet Quantity', fontsize=14)
-plt.xlim(1.0, 3.0)
+plt.xlim(1.0, 2.5)
+plt.xticks([1.0, 1.5, 2.0, 2.5])
 # plt.ylim(0, max(mcW, mcA, mc0, mbN(0.1, alphaHigh)) * 1.05)
 plt.ylim(1, 5)
 plt.grid(True, alpha=0.3)
+# plt.legend(handlelength=1.5)
 plt.legend()
-plt.tight_layout()
+plt.tight_layout(pad=0.1)
 plt.show()
+
+#plt.savefig('figure1.png', bbox_inches='tight', pad_inches=0.02)
 
 # ============================================================
 # Plot 2: MC decomposition
