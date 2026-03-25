@@ -60,12 +60,12 @@ mcA = mcN(w, t, p, cA, k)
 nGrid = np.linspace(1, 3, 500)
 
 plt.figure(figsize=(4, 4))
-plt.plot(nGrid, mbN(nGrid, alpha), label='Marginal benefit',
+plt.plot(nGrid, mbN(nGrid, alpha), label='MB baseline',
          linewidth=2.5, color="black")
 plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB: higher α',
          linewidth=2.5, color="blue")
 
-plt.axhline(mc0, label='Marginal cost', linewidth=2.5,
+plt.axhline(mc0, label='MC baseline', linewidth=2.5,
              linestyle='--', color="black")
 plt.axhline(mcT, label='MC: higher t', linewidth=2.5,
             linestyle='--', color="red")
@@ -82,8 +82,8 @@ plt.annotate(f'Higher t\n    n*={nW:.2f}', (nW, mcW), xytext=(16, -27), textcoor
 plt.annotate(f'Higher α\nn*={nA:.2f}', (nA, mcA), xytext=(-3, 15), textcoords='offset points',
              fontsize="12", color="blue", zorder=5)
 
-plt.xlabel('Number of pets ($n$)', fontsize=15)
-plt.ylabel('Marginal value', fontsize=15)
+plt.xlabel('Number of pets ($n$)', fontsize=15, labelpad=0)
+plt.ylabel('Marginal value', fontsize=15, labelpad=0)
 # plt.title('Model 2: Marginal Benefit and Marginal Cost for Pet Quantity', fontsize=14)
 plt.xlim(1.0, 2.5)
 plt.xticks([1.0, 1.5, 2.0, 2.5])
@@ -94,7 +94,7 @@ plt.yticks(fontsize=12)
 plt.grid(True, alpha=0.3)
 # plt.legend(handlelength=1.5)
 plt.legend(
-    loc='upper right', bbox_to_anchor=(0.99, 0.99),
+    loc='upper right', bbox_to_anchor=(1.0, 1.0),
     fontsize=15,
     handlelength=1.2,
     handletextpad=0.4,
