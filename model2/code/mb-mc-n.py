@@ -59,26 +59,26 @@ nGrid = np.linspace(1, 3, 500)
 
 plt.figure(figsize=(5, 5))
 plt.plot(nGrid, mbN(nGrid, alpha), label='MB(n): baseline',
-         linewidth=2, color="red")
+         linewidth=2, color="black")
 plt.plot(nGrid, mbN(nGrid, alphaHigh), label='MB(n): higher α',
-         linewidth=2, color="orange")
+         linewidth=2, color="blue")
 
 plt.axhline(mc0, label='MC(n): baseline', linewidth=2,
-             linestyle='--', color="red")
+             linestyle='--', color="black")
 plt.axhline(mcW, label='MC(n): higher w', linewidth=2,
-            linestyle='--', color="orange")
+            linestyle='--', color="red")
 
 # Equilibrium points
-plt.scatter([n0], [mc0], s=70, zorder=5, color="red")
-plt.scatter([nW], [mcW], s=70, zorder=5)
-plt.scatter([nA], [mcA], s=70, zorder=5)
+plt.scatter([n0], [mc0], s=70, zorder=5, color="black")
+plt.scatter([nW], [mcW], s=70, zorder=5, color="red")
+plt.scatter([nA], [mcA], s=70, zorder=5, color="blue")
 
-plt.annotate(f'n*={n0:.2f}', (n0, mc0), xytext=(-10, -8),
-             textcoords='offset points')
-plt.annotate(f'higher w n*={nW:.2f}', (nW, mcW), xytext=(8, -18),
-             textcoords='offset points')
-plt.annotate(f'higher α n*={nA:.2f}', (nA, mcA), xytext=(8, 8),
-             textcoords='offset points')
+plt.annotate(f'n*={n0:.2f}', (n0, mc0), xytext=(-30, -20), textcoords='offset points',
+             fontweight='bold', color="black")
+plt.annotate(f'higher w n*={nW:.2f}', (nW, mcW), xytext=(5, 10), textcoords='offset points',
+             fontweight='bold', color="red")
+plt.annotate(f'higher α n*={nA:.2f}', (nA, mcA), xytext=(8, 8), textcoords='offset points',
+             fontweight='bold', color="blue")
 
 plt.xlabel('Number of pets (n)', fontsize=12)
 plt.ylabel('Marginal value', fontsize=12)
