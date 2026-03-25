@@ -32,7 +32,7 @@ expK0 = monetaryExpenditure(alpha0, gamma0, w, t, k0)
 yMin = 0
 yMax = 1.05 * max(expAlpha.max(), expGamma.max(), expK.max())
 
-fig, axes = plt.subplots(1, 3, figsize=(5, 4), sharey=True)
+fig, axes = plt.subplots(1, 3, figsize=(4.5, 4), sharey=True)
 # fig, axes = plt.subplots(1, 3, figsize=(5.2, 2.6), sharey=True)
 
 # Panel (a): expenditure vs alpha
@@ -41,9 +41,9 @@ axes[0].plot(alphaVals, expAlpha, linewidth=2)
 axes[0].scatter([alpha0], [expAlpha0], color='black', s=30, zorder=5)
 axes[0].annotate(f'({alpha0:.2f}, {expAlpha0:.2f})',
                  (alpha0, expAlpha0),
-                 xytext=(-55, 10),
+                 xytext=(-55, 15),
                  textcoords='offset points',
-                 fontsize=10)
+                 fontsize=12)
 
 # axes[0].set_title(r'(a) vs. $\alpha$', fontsize=9)
 axes[0].set_xlabel(r'$\alpha$', fontsize=15)
@@ -64,9 +64,9 @@ axes[1].plot(gammaVals, expGamma, linewidth=2)
 axes[1].scatter([gamma0], [expGamma0], color='black', s=30, zorder=5)
 axes[1].annotate(f'({gamma0:.2f}, {expGamma0:.2f})',
                  (gamma0, expGamma0),
-                 xytext=(4, -15),
+                 xytext=(-2, -18),
                  textcoords='offset points',
-                 fontsize=10)
+                 fontsize=12)
 
 # axes[1].set_title(r'(b) vs. $\gamma$', fontsize=9)
 axes[1].set_xlabel(r'$\gamma$', fontsize=15)
@@ -80,9 +80,9 @@ axes[2].plot(kVals, expK, linewidth=2)
 axes[2].scatter([k0], [expK0], color='black', s=30, zorder=5)
 axes[2].annotate(f'({k0:.2f}, {expK0:.2f})',
                  (k0, expK0),
-                 xytext=(4, -15),
+                 xytext=(4, -18),
                  textcoords='offset points',
-                 fontsize=10)
+                 fontsize=12)
 
 # axes[2].set_title(r'(c) vs. $k$', fontsize=9)
 axes[2].set_xlabel(r'$k$', fontsize=15)
