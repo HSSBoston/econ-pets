@@ -107,13 +107,15 @@ ax1.text(
     fontsize=10
 )
 
+ax1.margins(x=0)
+ax1.set_xlim(wMin, wMax)
 ax1.set_xlabel("Hourly wage rate (w)", fontsize=12)
 ax1.set_ylabel("Pet-related cost", fontsize=12)
 ax1.set_title("Model 2: Expenditure Decomposition (Stacked Area)", fontsize=14)
 ax1.legend()
 ax1.grid(True, alpha=0.3)
 
-plt.tight_layout()
+plt.tight_layout(pad=0.1)
 # #plt.show()
 
 #
@@ -139,23 +141,25 @@ ax2.annotate(f"{baselineTime:.2f}", (w0, baselineTime), xytext=(5, 5), textcoord
 ax2.annotate(f"{baselineFixed:.2f}", (w0, baselineFixed), xytext=(5, 5), textcoords="offset points")
 ax2.annotate(f"{baselineTotal:.2f}", (w0, baselineTotal), xytext=(5, 5), textcoords="offset points")
 
+ax2.margins(x=0)
+ax2.set_xlim(wMin, wMax)
 ax2.set_xlabel("Hourly wage rate (w)", fontsize=12)
 ax2.set_ylabel("Pet-related cost", fontsize=12)
 ax2.set_title("Model 2: Expenditure Decomposition (Line)", fontsize=14)
 ax2.legend()
 ax2.grid(True, alpha=0.3)
 
-plt.tight_layout()
-plt.show()
+plt.tight_layout(pad=0.1)
+# plt.show()
 
 #
 # Figure 3: Cost shares
 #
 fig3, ax3 = plt.subplots(figsize=(9, 6))
 
-ax3.plot(wGrid, monetaryShareVals, label=r"Monetary share $pc^*n^*/\mathrm{total}$", linewidth=2)
-ax3.plot(wGrid, timeShareVals, label=r"Time share $wt\,n^*/\mathrm{total}$", linewidth=2)
-ax3.plot(wGrid, fixedShareVals, label=r"Fixed share $kn^*/\mathrm{total}$", linewidth=2)
+ax3.plot(wGrid, monetaryShareVals, label=r"Monetary cost $pc^*n^*$", linewidth=2)
+ax3.plot(wGrid, timeShareVals, label=r"Opportunity cost $wt\,n^*$", linewidth=2)
+ax3.plot(wGrid, fixedShareVals, label=r"Overhead $kn^*$", linewidth=2)
 
 ax3.axvline(w0, linestyle="--", linewidth=1)
 
@@ -165,20 +169,23 @@ ax3.scatter(
     s=40
 )
 
-ax3.annotate(f"{baselineMonetaryShare:.2f}", (w0, baselineMonetaryShare), xytext=(5, 5), textcoords="offset points")
-ax3.annotate(f"{baselineTimeShare:.2f}", (w0, baselineTimeShare), xytext=(5, 5), textcoords="offset points")
-ax3.annotate(f"{baselineFixedShare:.2f}", (w0, baselineFixedShare), xytext=(5, 5), textcoords="offset points")
+# ax3.annotate(f"{baselineMonetaryShare:.2f}", (w0, baselineMonetaryShare), xytext=(5, 5), textcoords="offset points")
+# ax3.annotate(f"{baselineTimeShare:.2f}", (w0, baselineTimeShare), xytext=(5, 5), textcoords="offset points")
+# ax3.annotate(f"{baselineFixedShare:.2f}", (w0, baselineFixedShare), xytext=(5, 5), textcoords="offset points")
 
 ax3.set_xlabel("Hourly wage rate (w)", fontsize=12)
 ax3.set_ylabel("Cost share", fontsize=12)
+
+ax3.margins(x=0)
+ax3.set_xlim(wMin, wMax)
 ax3.set_ylim(0, 1)
-ax3.set_title("Model 2: Cost Shares", fontsize=14)
+# ax3.set_title("Model 2: Cost Shares", fontsize=14)
 ax3.legend()
 ax3.grid(True, alpha=0.3)
 
-plt.tight_layout()
+plt.tight_layout(pad=0.1)
 plt.show()
 
-# fig1.savefig("stackedArea.png", dpi=300)
-# fig2.savefig("linePlot.png", dpi=300)
-# fig3.savefig("costShares.png", dpi=300)
+# fig1.savefig("stackedArea.png", dpi=300, bbox_inches="tight", pad_inches=0)
+# fig2.savefig("linePlot.png", dpi=300, bbox_inches="tight", pad_inches=0)
+# fig3.savefig("costShares.png", dpi=300, bbox_inches="tight", pad_inches=0)
