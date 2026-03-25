@@ -67,9 +67,9 @@ print(f"Time cost (wtn*) = {baselineTime:.4f}")
 print(f"Fixed cost (kn*) = {baselineFixed:.4f}")
 print(f"Total cost (pc*n* + wtn* + kn*) = {baselineTotal:.4f}")
 
-# ------------------------------------------------------------
+#
 # Figure 1: Stacked area plot
-# ------------------------------------------------------------
+#
 fig1, ax1 = plt.subplots(figsize=(9, 6))
 
 ax1.stackplot(
@@ -102,9 +102,9 @@ ax1.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
 
-# ------------------------------------------------------------
+#
 # Figure 2: Line plot
-# ------------------------------------------------------------
+#
 fig2, ax2 = plt.subplots(figsize=(9, 6))
 
 ax2.plot(wGrid, monetaryVals, label="Monetary", linewidth=2)
