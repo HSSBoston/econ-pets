@@ -1,110 +1,43 @@
-import numpy as np, math
+import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.ticker import FormatStrFormatter
-
-n = np.linspace(0.1, 5, 200)
-c = np.linspace(0.1, 5, 200)
-N, C = np.meshgrid(n, c)
-
-w = 57.77
-t = 0.0326
-p = 1
-k = 0.1
-alpha = 3.66
-beta = math.e
-gamma = 0.15
-
-U = w \
-    - (w * t * N) \
-    - (p * C * N) \
-    - (k * N) \
-    + (alpha * np.log(beta)) \
-    + (alpha * np.log(N)) \
-    + (alpha * gamma * np.log(C))
-
-nOptimal = (alpha * (1 - gamma)) / (w * t + k)
-cOptimal = (gamma * (w * t + k)) / (p * (1 - gamma))
-
-uOptimal = w \
-    - (w * t * nOptimal) \
-    - (p * cOptimal * nOptimal) \
-    - (k * nOptimal) \
-    + (alpha * np.log(beta)) \
-    + (alpha * np.log(nOptimal)) \
-    + (alpha * gamma * np.log(cOptimal))
-
-# Figure (wider → prevents z-axis clipping)
-fig = plt.figure(figsize=(4,4))
-ax = fig.add_subplot(111, projection="3d")
-
-# Smooth surface (no mesh lines)
-surf = ax.plot_surface(
-    N, C, U,
-    cmap="jet",
-    edgecolor='none',
-    antialiased=True
-)
-
-ax.scatter(nOptimal, cOptimal, uOptimal+0.5,
-           color='white', edgecolor='white',
-           s=80, linewidth=2, depthshade=False)
-
-# ax.text(nOptimal, cOptimal, uOptimal,
-#         r'$(n^*, c^*)$',
-#         fontsize=10, color='black')
-
-ax.plot([nOptimal, nOptimal],
-        [cOptimal, cOptimal],
-        [U.min(), uOptimal],
-        color='black', linestyle='--', linewidth=1.5)
-
-# visible point on base plane
-ax.scatter(nOptimal, cOptimal, U.min(),
-           s=30, color='black',
-           linewidth=2, depthshade=False)
-
-ax.plot([nOptimal, nOptimal],
-        [0,  cOptimal],
-        [U.min(), U.min()],
-        color='black', linestyle='--', linewidth=1.5)
-
-ax.plot([nOptimal, 5],
-        [cOptimal,  cOptimal],
-        [U.min(), U.min()],
-        color='black', linestyle='--', linewidth=1.5)
-
-ax.text(nOptimal + 0.1, -0.78, U.min(), 
-        r'$\mathbf{n^*=1.57}$', fontsize=11, color='red', zorder=5)
-
-ax.text(4.1, cOptimal + 0.15, U.min(),
-        r'$\mathbf{c^*=0.35}$', fontsize=11, color='red', zorder=5)
 
 
-# Labels (tight but readable)
-ax.set_xlabel("N", labelpad=2, fontsize=11)
-ax.set_ylabel("C", labelpad=2, fontsize=11)
-ax.set_zlabel("U", labelpad=6, fontsize=11)
+everyYear = [2014, 2016, 2018, 2019, 2020, 2021, 2022, 2024]
+numOfHouseholdsWithPetsYears = [2014, 2016, 2018, 2020, 2021, 2022, 2024]
 
-# Clean z ticks
-zmin, zmax = U.min(), U.max()
-ax.set_zticks(np.linspace(int(zmin), int(zmax), 4))
-ax.zaxis.set_major_formatter(FormatStrFormatter('%d'))
+numOfHouseholdsWithPets = [79.7, 84.6, 84.9, 90.5, 90.9, 86.9, 94]
+petCareSpending = [58.04, 62, 90.5, 97.1, 103.6, 123.6, 136.8, 151.9]
 
-# Better viewing angle (important!)
-ax.view_init(elev=25, azim=-60)
+fig, ax1 = plt.subplots(figsize=(4, 4))
+ax2 = ax1.twinx()
 
-# Reduce box distortion (makes surface look more natural)
-ax.set_box_aspect((1, 1, 0.7))
+ax1.plot(numOfHouseholdsWithPetsYears, numOfHouseholdsWithPets,
+         color="red", marker="o", linewidth=3, markersize=8, zorder=5)
+ax2.plot(everyYear, petCareSpending,
+         color="blue", marker="o", linewidth=3, markersize=8)
 
-# Remove pane backgrounds (clean paper look)
-ax.xaxis.pane.fill = False
-ax.yaxis.pane.fill = False
-ax.zaxis.pane.fill = False
 
-# Light grid only (optional)
-ax.grid(True, linestyle='-', linewidth=0.3, alpha=0.3)
+ax1.set_xlabel("Years", fontsize=15, labelpad=0)
+ax1.set_xticks([2014, 2016, 2018, 2020, 2022, 2024])
+ax1.set_xticks([2015, 2017, 2019, 2021, 2023], minor=True)
+ax1.set_ylabel("# of Households w/ Pets (M)", color="red", fontsize=15, labelpad=0)
+ax1.set_yticks(np.arange(70,101,5))
+ax2.set_ylabel("Pet Expenditure ($bn)", color="blue", fontsize=15, labelpad=0)
+ax2.set_yticks(np.arange(50,151,10))
 
-# Tight margins WITHOUT clipping
-plt.subplots_adjust(left=0, right=0.95, bottom=0, top=0.99)
+ax1.tick_params(axis='x', which='minor', direction='in', length=3)
+ax1.tick_params(axis='x', which='major', direction='in', length=5)
+ax2.tick_params(axis='both', direction='in')
 
+ax1.yaxis.set_label_coords(-0.09, 0.5)
+
+ax1.tick_params(axis='both', labelsize=12)
+ax2.tick_params(axis='both', labelsize=12)
+
+ax1.grid(axis='x', which='major', alpha=0.3)
+
+# plt.tick_params(labelsize=16)
+# plt.rcParams["font.size"] = 16
+
+plt.tight_layout(pad=0.05)
 plt.show()
