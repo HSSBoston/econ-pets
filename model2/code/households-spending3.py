@@ -46,7 +46,7 @@ surf = ax.plot_surface(
 )
 
 ax.scatter(nOptimal, cOptimal, uOptimal+0.5,
-           color='white', edgecolor='white', 
+           color='white', edgecolor='white',
            s=80, linewidth=2, depthshade=False)
 
 # ax.text(nOptimal, cOptimal, uOptimal,
@@ -57,6 +57,28 @@ ax.plot([nOptimal, nOptimal],
         [cOptimal, cOptimal],
         [U.min(), uOptimal],
         color='black', linestyle='--', linewidth=1.5)
+
+# visible point on base plane
+ax.scatter(nOptimal, cOptimal, U.min(),
+           s=30, color='black',
+           linewidth=2, depthshade=False)
+
+ax.plot([nOptimal, nOptimal],
+        [0,  cOptimal],
+        [U.min(), U.min()],
+        color='black', linestyle='--', linewidth=1.5)
+
+ax.plot([nOptimal, 5],
+        [cOptimal,  cOptimal],
+        [U.min(), U.min()],
+        color='black', linestyle='--', linewidth=1.5)
+
+ax.text(nOptimal + 0.1, -0.78, U.min(), 
+        r'$\mathbf{n^*=1.57}$', fontsize=11, color='red', zorder=5)
+
+ax.text(4.1, cOptimal + 0.15, U.min(),
+        r'$\mathbf{c^*=0.35}$', fontsize=11, color='red', zorder=5)
+
 
 # Labels (tight but readable)
 ax.set_xlabel("N", labelpad=2, fontsize=11)
