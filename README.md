@@ -73,6 +73,7 @@ This work was presented
 -->
 
 ## Publications
+  - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," In Proc. of 13th International Young Researchers' Conference, oral presentation paper, July 2026. preprint
   - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference (ISEC)*, short paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf)
   - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference (ASSET)*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf), [presentation slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)
 
