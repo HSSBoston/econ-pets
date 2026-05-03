@@ -1,10 +1,10 @@
 <!--
 ## Modeling the Impact of Pets on Household Happiness: An Economic Approach
--->
 
 <p align="center">
   <img src="./images/logo.jpg" width="650" />
 </p>
+-->
 
 ## Short Project Summary
 
