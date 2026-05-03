@@ -46,6 +46,7 @@ This project has been developing and analyzing multiple economic models.
 - Model 4 (March 2026 -)
   - Revised from Model 3. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified to control the trade-off between pet quantity and pet quality (welfare) by varying their relative importance. This allows the model to represent different types of households such as those that prefer fewer, highly-cared pets and others that prefer a greater number of pets with less-intensive care. 
   - [Model description](model2/model4.pdf)
+  - Published and presented at IYRC Summer 2026 (paper, slides, video)
 
   <!--
   - Revised baseline model. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership is zero (n = 0) or pet welfare is very low (q ≈ 0). 
