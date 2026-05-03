@@ -65,7 +65,7 @@ This project has been developing and analyzing multiple economic models.
 - Model 7 (March 2026 -)
   - Revised from Model 2. The utility function is modified to have an additional choice variable, discretionary caregiving time, in addition to pet quantity, caregiving intensity, and standard of living (consumption). This model decomposes caregiving time into required baseline time and discretionary enrichment time. First, each pet requires a fixed amount of basic care time, which is exogenous and represents essential activities such as feeding, watering, cleaning, mandatory hygiene, and minimum walking/exercise. Second, the household chooses discretionary enrichment time, which reflects additional time investment beyond the required baseline, including premium feeding (e.g., healthy foods, supplements, and non-essential treats), frequent water supply, non-essential brushing, grooming, bathing, and aesthetic care, leisure (e.g., walking beyond minimum exercise, going to pet parks, exploring new environments, playdates with other pets, teaching tricks, providing mental stimulation with toys), and social and emotional activities (e.g., playing, petting, cuddling, talking to and engaging with pets, and sitting with pets while relaxing), and health monitoring (e.g., preventive vet visits and at-home weight monitoring). This model considers discretionary caregiving time in the utility function as a choice variable and required caregiving time in the time constraint as an exogenous parameter. 
   - [Model description](model2/model7.pdf)
-  - Published and presented at IYRC Summer 2026 (paper, slides, video)
+  - Published and presented at IYRC Summer 2026 ([paper](./docs/iyrc26summer.pdf), slides, video)
 
 <!--
 <p align="center">
@@ -78,7 +78,7 @@ This work was presented
 -->
 
 ## Publications
-  - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," In Proc. of 13th International Young Researchers' Conference, oral presentation paper, July 2026. preprint, presentation slides, video
+  - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," In Proc. of 13th International Young Researchers' Conference, oral presentation paper, July 2026. [preprint](./docs/iyrc26summer.pdf), presentation slides, video
   - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference (ISEC)*, short paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf)
   - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference (ASSET)*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf), [presentation slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)
 
