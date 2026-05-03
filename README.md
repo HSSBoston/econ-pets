@@ -1,0 +1,86 @@
+<!--
+## Modeling the Impact of Pets on Household Happiness: An Economic Approach
+-->
+
+<p align="center">
+  <img src="./images/logo.jpg" width="650" />
+</p>
+
+## Short Project Summary
+
+This project studies a formal economic model that describes how households make choices about pet ownership. Based on microeconomic theories of fertility, the proposed model analyzes pet ownership as a rational, utility-maximizing choice. It considers key parameters in pet ownership choices and defines an economic problem to optimize these parameters with respect to household utility (welfare). The model yields marginal cost-benefit trade-offs to find the utility equilibrium. Comparative statics characterize the relationships among relevant parameters and derive hypotheses about pet ownership patterns over time. Computational experiments illustrate the household utility landscape and clarify how key parameters shape pet ownership choices. This work aids current/prospective pet owners to explore quantitative economic reasoning about pet ownership, with the goal of reducing impulsive acquisition, supporting better-organized care routines, and addressing the on-going trend of pet relinquishment.
+
+<!--
+
+This project studies a formal model that describes how households make choices about pet ownership. Based on microeconomic theories of fertility, the proposed model applies economic principles, such as utility optimization, budget and time constraints, opportunity cost, and diminishing marginal utility, to analyze pet ownership as a rational, utility-maximizing choice. The model considers key parameters in pet ownership such as preferences for pets, the number and welfare of pets, the price of pet-care goods, caregiving time and intensity, and household income.
+
+, and defines an economic problem to optimize these parameters with respect to household utility (welfare).
+
+ an optimization problem to maximize the household utility by having pets and conducts a marginal cost-benefit analysis to find the utility equilibrium. This work also carries out comparative statics analysis to examine the relationships among relevant parameters and derive hypotheses about pet ownership phenomena in the past and future.  
+
+The proposed model serves as a ground for computational experiments with empirical data. Experimental results illustrate a utility landscape for average pet owners in the U.S. and reveal the combinations of parameter values at and around the utility equilibrium. The results also show how those parameters impact the household's choices about pet ownership and caregiving. 
+
+This work is intended to aid the current and prospective pet owners to explore quantitative economic reasoning about pet ownership in the hope of reducing the chances of impulse pet acquisition, helping schedule pet care routines better, and reversing the on-going trend of pet relinquishment. 
+
+-->
+
+## Models
+
+This project has been developing and analyzing multiple economic models.
+
+- Model 1 (August to December 2025)
+  - The initial baseline model. Deprecated now.
+  - Model description
+  - Presented at ASSET 2025 ([abstract](./docs/asset25.pdf), [slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)), AnimalHack 2025 ([slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)), and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
+
+- Model 2 (January 2026 - )
+  - Revised baseline model. The utility function is inherited from Model 1 without modification. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
+  - [Model description](model2/model2.pdf)
+  - Published and presented at ISEC 2026 ([short paper](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf))
+
+- Model 3 (March 2026 - )
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified so that caregiving time and caregiving intensity serve as distinct inputs to produce pet welfare. This model clearly distinguishes these two inputs. Caregiving time represents the total time devoted to pet-related activities, including routine care (e.g., feeding, cleaning, and grooming), physical activities (e.g., walking, playing, and exercise), and emotional and social interactions (e.g., petting, bonding, and sitting together). In contrast, caregiving intensity captures the quality and resource intensity of care per unit time, including food quality (e.g., premium/healthy v.s. basic food and high-quality v.s. minimal treats), training intensity (e.g., structured v.s. casual training and consistency/effort level), attention intensity (e.g., focused interaction v.s. distracted presence), health/grooming quality (e.g., high-quality v.s. basic grooming and preventive care such as supplements and weight management), and environmental quality (e.g., comfortable v.s. basic living space and safe/enriched v.s. basic space). The utility function adopts a Cobb-Douglas form to combine caregiving time and intensity in the production of pet welfare.
+  - [Model description](model2/model3.pdf)
+
+- Model 4 (March 2026 -)
+  - Revised from Model 3. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified to control the trade-off between pet quantity and pet quality (welfare) by varying their relative importance. This allows the model to represent different types of households such as those that prefer fewer, highly-cared pets and others that prefer a greater number of pets with less-intensive care. 
+  - [Model description](model2/model4.pdf)
+
+  <!--
+  - Revised baseline model. The budget and time constraints are inherited from Model 2. The utility funtion is modified to add the term "1 +" in the logarithmic pet-companionship term. This ensures that the argument of the logarithm is strictly positive, so utility remains finite and well-defined (i.e., avoids the ln⁡(0) singularity) even when pet ownership is zero (n = 0) or pet welfare is very low (q ≈ 0). 
+  -->
+
+- Model 5 (March 2026 -)
+  - Revised from Model 2. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified to have two separate companionship terms about pet quantity and pet quality (welfare). In Model 2, pet quantity and quality are combined into a single term.
+  - [Model description](model2/model5.pdf)
+
+- Model 6 (March 2026 -)
+  - Revised from Model 5. The budget and time constraints are inherited from Model 2 without modification. The utility function is modified so that caregiving time and caregiving intensity serve as distinct inputs to produce pet welfare. This model clearly distinguishes these two inputs. The utility function adopts a Cobb-Douglas form to combine caregiving time and intensity in the production of pet welfare.
+  - [Model description](model2/model6.pdf)
+
+- Model 7 (March 2026 -)
+  - Revised from Model 2. The utility function is modified to have an additional choice variable, discretionary caregiving time, in addition to pet quantity, caregiving intensity, and standard of living (consumption). This model decomposes caregiving time into required baseline time and discretionary enrichment time. First, each pet requires a fixed amount of basic care time, which is exogenous and represents essential activities such as feeding, watering, cleaning, mandatory hygiene, and minimum walking/exercise. Second, the household chooses discretionary enrichment time, which reflects additional time investment beyond the required baseline, including premium feeding (e.g., healthy foods, supplements, and non-essential treats), frequent water supply, non-essential brushing, grooming, bathing, and aesthetic care, leisure (e.g., walking beyond minimum exercise, going to pet parks, exploring new environments, playdates with other pets, teaching tricks, providing mental stimulation with toys), and social and emotional activities (e.g., playing, petting, cuddling, talking to and engaging with pets, and sitting with pets while relaxing), and health monitoring (e.g., preventive vet visits and at-home weight monitoring). This model considers discretionary caregiving time in the utility function as a choice variable and required caregiving time in the time constraint as an exogenous parameter. 
+  - [Model description](model2/model7.pdf)
+
+<!--
+<p align="center">
+  <img src="model1/utility-landscape.png" width="500" />
+</p>
+
+This work was presented 
+
+ ([presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)). 
+-->
+
+## Publications
+  - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference (ISEC)*, short paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf)
+  - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference (ASSET)*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf), [presentation slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)
+
+## Presentations
+  - Presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./docs/poster-jls.jpg) in Japanese) and won an award of excellence.  
+  - Presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery). [presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)
+
+## Informal Context to this Project
+
+I wanted a pet, but my parents always disagreed, saying no one in our family has enough time to care for a pet. I went through stats, reports, and research papers about the time required for pet care, the benefits to having pets, pet relinquishment case studies at shelters, etc. Then I came across the economic theories for household fertility, which model the benefit and cost of children. I found them intriguing and thought they could be applied to model the benefit and cost of pets. This led me to studying those theories and expanding  my knowledge about microeconomics and calculus. I also tried to use my quantitative economic reasoning to convince my parents (which worked! I am looking for a cat now).
+
