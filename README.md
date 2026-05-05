@@ -31,7 +31,7 @@ This project has been developing and analyzing multiple economic models.
 - Model 1 (August to December 2025)
   - The initial baseline model. Deprecated now.
   - Model description
-  - Presented at ASSET 2025 ([abstract](./docs/asset25.pdf), [slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing)), AnimalHack 2025 ([slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)), and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
+  - Presented at ASSET 2025 ([abstract](./docs/asset25.pdf), [slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing), [video](https://www.instagram.com/p/DXZTi0ek5K5/)), AnimalHack 2025 ([slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)), and 2025 Summer Science Fair of the Japanese Language School of Greater Boston.
 
 - Model 2 (January 2026 - )
   - Revised baseline model. The utility function is inherited from Model 1 without modification. The budget constraint is revised to incorporate an additional pet-ownership expense. This is a fixed per-pet cost per period (or amortized per-period equivalent for one-time costs) that is independent from caregiving intensity. Examples include licensing, insurance premiums, adoption fee (amortized), breeder cost (amortized), spay/neuter, (amortized), initial vet exam and vaccinations (amortized), and microchipping (amortized).
