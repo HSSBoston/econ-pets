@@ -74,7 +74,7 @@ This project has been developing and analyzing multiple economic models.
 
 ## Presentations
   - Presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./docs/poster-jls.jpg) in Japanese) and won an award of excellence, September 2025.
-  - Presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery). [presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)
+  - Presented at [AnimalHack 2025](https://animalhack2025.devpost.com/) and won a [Grand Prix (1st Place) award](https://animalhack2025.devpost.com/project-gallery), September 2025. [presentation slides](https://docs.google.com/presentation/d/1jVFw6v7WuYL-fCS8_CAo-duVvMBiGqPtpaCk-j4YjjI/edit?usp=sharing)
 
 ## Informal Context to this Project
 
