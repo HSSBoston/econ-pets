@@ -67,7 +67,7 @@ This project has been developing and analyzing multiple economic models.
   - Published and presented at IYRC Summer 2026 ([paper](./docs/iyrc26summer.pdf), [slides](https://docs.google.com/presentation/d/1Pwp4ZavvD47l2GeJLJAsJVJYq8epDJDoNnAj0Zi1QPE/edit?usp=sharing), video)
 
 ## Awards
-  - Best Social Science and Humanities Presentation Award, "The Economics of Pet Ownership: A Quantitative Analysis," *13th International Young Researchers' Conference (IYRC)*, Summer Virtual Conference, July 2026. 
+  - Best Social Science and Humanities Presentation Award, "The Economics of Pet Ownership: A Quantitative Analysis," *13th International Young Researchers' Conference (IYRC)*, summer nirtual Conference, July 2026. 
 
 ## Publications
   - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," Best Social Science and Humanities Presentation Award, In *Proc. of 13th International Young Researchers' Conference (IYRC)*, oral presentation paper, July 2026. [preprint](./docs/iyrc26summer.pdf), [presentation slides](https://docs.google.com/presentation/d/1Pwp4ZavvD47l2GeJLJAsJVJYq8epDJDoNnAj0Zi1QPE/edit?usp=sharing), video
