@@ -70,9 +70,10 @@ This project has been developing and analyzing multiple economic models.
   - Best Social Science and Humanities Presentation Award, "The Economics of Pet Ownership: A Quantitative Analysis," *13th International Young Researchers' Conference (IYRC)*, July 2026. 
 
 ## Publications
-  - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," Best Social Science and Humanities Presentation Award, In *Proc. of 13th International Young Researchers' Conference (IYRC)*, oral presentation paper, July 2026. [preprint](./docs/iyrc26summer.pdf), [presentation slides](https://docs.google.com/presentation/d/1Pwp4ZavvD47l2GeJLJAsJVJYq8epDJDoNnAj0Zi1QPE/edit?usp=sharing), video
+  - Hanna Suzuki, "The Economics of Pet Ownership: A Quantitative Analysis," **Best Social Science and Humanities Presentation Award**, In *Proc. of 13th International Young Researchers' Conference (IYRC)*, oral presentation paper, July 2026. [publisher page](https://past.the-iyrc.org/iyrcsummer-2026.html), [preprint](https://github.com/HSSBoston/econ-pets/blob/main/docs/iyrc26summer.pdf), [preprint](./docs/iyrc26summer.pdf), [presentation slides](https://docs.google.com/presentation/d/1Pwp4ZavvD47l2GeJLJAsJVJYq8epDJDoNnAj0Zi1QPE/edit?usp=sharing), video
   - Hanna Suzuki, "Analyzing the Impacts of Pets on Household Wellbeing," In *Proc. of the 16th IEEE Integrated STEM Education Conference (ISEC)*, short paper, Princeton, NJ, March 2026. [preprint](./docs/isec26-poster-paper.pdf), [poster](./docs/isec26poster.pdf)
   - Hanna Suzuki, "Modeling and Visualizing the Impacts of Pets on Household Wellbeing," In *Proc. of 5th American Society of Science, Engineering and Technology Conference (ASSET)*, oral presentation abstract, December 2025. [preprint](./docs/asset25.pdf), [presentation slides](https://docs.google.com/presentation/d/1cOlcLBsBsgApXNbVKq0WlTzS9Rx7XnBVRSnLIWNbKtE/edit?usp=sharing), [video](https://www.instagram.com/p/DXZTi0ek5K5/)
+
 
 ## Presentations
   - Presented at a summer science fair of the Japanese Language School of Greater Boston ([poster](./docs/poster-jls.jpg) in Japanese) and won an award of excellence, September 2025.
